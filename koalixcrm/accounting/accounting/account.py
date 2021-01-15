@@ -132,7 +132,7 @@ class AccountForm(forms.ModelForm):
             if self.cleaned_data['account_type'] != "L":
                 errors.append(_('The open liabilities account must be a liabities account'))
             elif open_reliabilities_account:
-                errors.append(_('There may only be one open liablities account in the system'))
+                errors.append(_('There may only be one open liabilities account in the system'))
         if self.cleaned_data['is_open_interest_account']:
             open_interest_account = Account.objects.filter(is_open_interest_account=True)
             if self.cleaned_data['account_type'] != "A":

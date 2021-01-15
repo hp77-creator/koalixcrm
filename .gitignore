@@ -1,5 +1,6 @@
 *.py[co]
-
+venv/
+*.log
 # Packages
 *.egg
 *.egg-info
@@ -27,3 +28,4 @@ pip-log.txt
 
 #VSCODE
 .vscode
+/projectsettings/static

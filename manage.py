@@ -2,7 +2,10 @@
 import os
 import sys
 
+#import projectsettings
+
 if __name__ == "__main__":
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projectsettings.settings.development_sqlite_settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
